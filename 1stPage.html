@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RBK Football Club</title>
+    <!-- css -->
+    <link rel="stylesheet" href="scriptCSS.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<!-- Load font awesome icons -->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<body>
+  
+<img class="myImages" id="myImg" src="https://img.freepik.com/free-vector/football-balls-flying-fire-background_1441-3921.jpg?size=626&ext=jpg" width="300" height="200">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<!-- The navigation menu -->
+<div class="navbar"->
+  <a href="#home">Home</a>
+  
+  <div class="subnav">
+    <button class="subnavbtn"><a href="C:\Users\imansour\Documents\Project_pair\WebSite2\history.html"></a>History <i class="fa fa-caret-down"></i></button>
+  </div>
+  <div class="subnav">
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn"><a href="C:\Users\imansour\Documents\Project_pair\WebSite2\Finance.html"></a> Financial Situation <i class="fa fa-caret-down"></i></button>
+      </div>
+
+
+    <div class="subnav">
+   <button class="subnavbtn">Management <i class="fa fa-caret-down"  onclick="openFormAdmin()"></i></button>
+ </div>
+  <div class="subnav">
+   <button class="subnavbtn">Store <i class="fa fa-caret-down"  onclick="openForm()"></i></button>
+     </div>
+  
+<div class="form-popup" id="myForm1">
+  <form class="form-container">
+    <h1>Login</h1>
+    <label for="user"><b>User Name</b></label>
+    <input type="text" id='userNameFans'placeholder="Enter user" name="email" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="PasswordFans"placeholder="Enter Password" name="password" required>
+    <button type="submit" class="btn" onclick="loginFans()">Login</button>
+    <button type='submit' class="btn" onclick="registerFans()">register</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+  </div>
+
+  <div class="form-popup" id="administrationLogin">
+  <form class="administrationLogin" >
+    <label for="userNameAdmin"><b>User Name</b></label>
+    <input type="text" id="userNameAdmin" placeholder="Enter user" name="userNameAdmin" required>
+    <!--<input type="text" id="userNameAdmin" name="userNameAdmin"><br><br>-->
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="PasswordAdmin" name="PasswordAdmin"><br><br>
+      <!--<input onclick="loginAdmin()" type="submit" value="login">-->
+      <button type="submit" class="btn" onclick="loginAdmin()">Login</button>
+      <button type="button" class="btn cancel" onclick="closeFormAdmin()">Close</button>
+    </form>
+    
+</div>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm1").style.display = "block";
+}
+function openFormAdmin(){
+  document.getElementById("administrationLogin").style.display="block";
+}
+function closeForm() {
+  document.getElementById("myForm1").style.display = "none";
+}
+function closeFormAdmin() {
+  document.getElementById("administrationLogin").style.display = "none";
+}
+function loginFans(){
+      var fanName=$('#userNameFans').val();
+      var fanPassword=$('#PasswordFans').val();
+      if(fanPassword===localStorage.getItem(fanName)){
+          alert('welcome '+fanName);
+          window.open('store.HTML');
+        }
+        else{
+          alert('you entered a wrong login. Please check the verification e-mail we sent you the first time');
+        }
+} 
+function loginAdmin(){
+      var userNameAdmin=$("#userNameAdmin").val();
+      var PasswordAdmin=$('#PasswordAdmin').val();
+      if((userNameAdmin==='youssef'&&PasswordAdmin==='12345')||(userNameAdmin==='issam'&&PasswordAdmin==='56789')){
+        alert('welcome boss');
+        window.open('management.HTML');
+      }
+      else {
+        alert('wrong login');
+      }
+    }
+ function registerFans(){
+      var newFanName=$('#userNameFans').val();
+      var newFanPassword=$('#PasswordFans').val();
+      window.localStorage.setItem(newFanName,newFanPassword);
+      alert('you are now registered');
+    }
+</script>  
+</script>
+</body>
+
+

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RBK Football Club</title>
+    <!-- css -->
+    <link rel="stylesheet" href="managementcss2.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<img class="myImages" id="myImg" src="https://ca.slack-edge.com/T015MCU5J1E-U015W54US6L-434d140e6f67-512" width="300" height="200" alt= "Youssef Ben Nejma : After a long experience as a manager for Real Madrid, where he won 5 Champions Leagues in a row, now he returned to his home club FC RBK to guide them to glory."></br>
+<img class="myImages" id="myImg2" src="https://ca.slack-edge.com/T015MCU5J1E-U015MEUHAQY-0d9670a979f1-512" alt="Issam Ben Mansour is a retired Goldman Sachs Partner,with a vast experience as a financial wizard he is heading the largest footballing project in the world."width="300" height="200"> </br>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<style type="text/css">
+</style>
+<script src="C:\Users\imansour\Documents\Project_pair\WebSite2\script_store.js"></script>
+
+
+<style type="text/css">
+  body {
+  background-image: url("C:/Users/imansour/Documents/Project_pair/WebSite2/reebok-logo-black-back_1920x1080_81-hd.jpg"),
+                    url("C:/Users/imansour/Documents/Project_pair/WebSite2/reebok-logo-black-back_1920x1080_81-hd.jpg"),
+                    url("C:/Users/imansour/Documents/Project_pair/WebSite2/reebok-logo-black-back_1920x1080_81-hd.jpg");  
+  background-repeat: no-repeat,
+                     no-repeat, 
+                     no-repeat;
+}
+
+
+</style>
+
+<div class="field">
+  <div class="field__box">
+    <div class="field__line field__line--goal--top"></div>
+    <div class="field__line field__line--goal--bottom"></div>
+    <div class="field__line field__line--penalty--top"></div>
+    <div class="field__line field__line--penalty--bottom"></div>
+    <div class="field__line field__line--penalty--arc--top"></div>
+    <div class="field__line field__line--penalty--arc--bottom"></div>
+    <div class="field__line field__line--mid"></div>
+    <div class="field__line field__line--circle"></div>
+    <div class="arrow"></div>
+    <div class="player player__item player__item--eleven">
+      <div class="player player__item--shirt">
+        9
+      </div>
+      <div class="player player__item--label">
+          Othman
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Othman
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U015METRM32-cb62c7acafcc-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              29
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-uy"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="player player__item player__item--ten">
+      <div class="player player__item--shirt">
+        1
+      </div>
+      <div class="player player__item--label">
+          Aymen
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Aymen
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014XRRQBMH-91da3b26105d-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              24
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-br"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="player player__item player__item--nine">
+      <div class="player player__item--shirt">
+        10
+      </div>
+      <div class="player player__item--label">
+          Rihem
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Rihem
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014GT7EJNT-0a4b8b813a65-512" class="player__item--card--photo">
+        </div> 
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              29
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-ar"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div> 
+    </div>
+    <div class="player player__item player__item--eight">
+      <div class="player player__item--shirt">
+        8
+      </div>
+      <div class="player player__item--label">
+          Achref
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Achref
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014XKLRUV8-f13c944913d3-512" class="player__item--card--photo">
+        </div>
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              32
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-es"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div> 
+    </div>
+    <div class="player player__item player__item--seven">
+      <div class="player player__item--shirt">
+        5
+      </div>
+      <div class="player player__item--label">
+          Wided
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Wided
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014XRSEUCB-9686f42c4783-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              28
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-es"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+    <div class="player player__item player__item--six">
+      <div class="player player__item--shirt">
+        11
+      </div>
+      <div class="player player__item--label">
+          Wala
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Wala
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U015MEU322U-b9fe8bf9d367-512" class="player__item--card--photo">
+        </div>
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--item player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--item player__item--card--info--age--data">
+              27
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--item player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--item player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-es"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--item player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--item player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+    <div class="player player__item player__item--five">
+      <div class="player player__item--shirt">
+        4
+      </div>
+      <div class="player player__item--label">
+          Ahmed
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Ahmed
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014QTGSYMC-b31128ac7724-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              28
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-hr"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+    <div class="player player__item player__item--four">
+      <div class="player player__item--shirt">
+        14
+      </div>
+      <div class="player player__item--label">
+          Nahedh
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Nahedh
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014XKM4NSW-4599c91468ef-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              32
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-ar"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+    <div class="player player__item player__item--three">
+      <div class="player player__item--shirt">
+        26
+      </div>
+      <div class="player player__item--label">
+          Sami
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Sami
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U015A8K9UE5-b3c3b30500e6-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              29
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-es"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+    <div class="player player__item player__item--two">
+      <div class="player player__item--shirt">
+        2
+      </div>
+      <div class="player player__item--label">
+          Yasser
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Yasser
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U014W8GAXN1-3d67b697b76a-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              33
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-br"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="player player__item player__item--gk">
+      <div class="player player__item--shirt">
+        1
+      </div>
+      <div class="player player__item--label">
+          Talel
+      </div>
+      <div class="player__item--card">
+        <div class="player__item--card--name">
+          Talel
+        </div>
+        <div class="player__item--card--photo-bg">
+          <img src="https://ca.slack-edge.com/T015MCU5J1E-U0153QXJ01J-987644fd53e1-512" class="player__item--card--photo">
+        </div>  
+        <div class="player__item--card--info">
+          <div class="player__item--card--info--column player__item--card--info--age">
+            <div class="player__item--card--info--column player__item--card--info--age--title">
+              Age
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--age--data">
+              24
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--country">
+            <div class="player__item--card--info--column player__item--card--info--country--title">
+              Country
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--country--data">
+              <span class="flag-icon flag-icon-de"></span>
+            </div>
+          </div>
+          <div class="player__item--card--info--column player__item--card--info--club">
+            <div class="player__item--card--info--column player__item--card--info--club--title">
+              Club
+            </div>
+            <div class="player__item--card--info--column player__item--card--info--club-data">
+              RBK
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<style type="text/css">
+ body {
+  font-family: Roboto;
+}
+
+.field {
+  top: 10vh;
+  left: 35vw;
+  width: 30vw;
+  height: 90vh;
+  background: url(https://4.bp.blogspot.com/-JiJEc7lH1Is/UHJs3kn261I/AAAAAAAADYA/gQRAxHK2q_w/s1600/tileable_old_school_video_game_grass.jpg);
+  background-size: 30%;
+  position: absolute;
+}
+.field .field__box {
+  width: 90%;
+  height: 90%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  margin: 20px auto;
+  position: relative;
+}
+.field .field__box .field__line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+.field .field__box .field__line--goal--top {
+  width: 15%;
+  height: 5%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-top: none;
+  left: 42.5%;
+}
+.field .field__box .field__line--goal--bottom {
+  bottom: 0;
+  width: 15%;
+  height: 5%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+  margin: 0 42.5%;
+}
+.field .field__box .field__line--penalty--top {
+  width: 35%;
+  height: 10%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-top: none;
+  margin: 0 32.5%;
+}
+.field .field__box .field__line--penalty--bottom {
+  bottom: 0;
+  width: 35%;
+  height: 10%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+  margin: 0 32.5%;
+}
+.field .field__box .field__line--penalty--arc--top {
+  top: 0;
+  width: 25%;
+  height: 12%;
+  border-radius: 0 0 60% 60%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  margin: 0 37.5%;
+}
+.field .field__box .field__line--penalty--arc--bottom {
+  bottom: 0;
+  width: 25%;
+  height: 12%;
+  border-radius: 60% 60% 0 0;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  margin: 0 37.5%;
+}
+.field .field__box .field__line--penalty--arc {
+  top: 0;
+  width: 25%;
+  height: 12%;
+  border-radius: 0 0 60% 60%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  margin: 0 37.5%;
+}
+.field .field__box .field__line--mid {
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.field .field__box .field__line--circle {
+  top: 44%;
+  width: 17%;
+  height: 12%;
+  margin: auto;
+  border-radius: 70%;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+  left: 41.5%;
+}
+.field .field__box .player {
+  position: absolute;
+}
+/*.field .field__box .player__item {
+  width: 9%;
+  height: 7%;
+  background: repeating-linear-gradient(90deg, #9c1737, #9c1737 10%, #325082 10%, #325082 20%);
+  border-radius: 50%;
+  box-shadow: 0 0 30px #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}*/
+.field .field__box .player__item {
+  width: 9%;
+  height: 7%;
+  background: repeating-linear-gradient(90deg, #9632a8, #9632a8 10%, #9632a8 10%, #9632a8 20%);
+  border-radius: 50%;
+  box-shadow: 0 0 30px #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  }
+.field .field__box .player__item--shirt {
+  bottom: 25%;
+  font-size: 1em;
+  text-align: center;
+  color: #ebe52d;
+}
+.field .field__box .player__item--label {
+  font-size: 0.7em;
+  top: 75%;
+  position: absolute;
+  background-color: #ebe52d;
+  color: #9c1737;
+  border-radius: 10%;
+  padding: 5%;
+}
+.field .field__box .player__item--card {
+  position: absolute;
+  top: -380%;
+  background-color: #9c1737;
+  font-size: 0.7em;
+  color: #325082;
+  border-radius: 3%;
+  box-shadow: 0 0 30px #000000;
+  z-index: 2;
+  display: none;
+  flex-flow: column;
+}
+.field .field__box .player__item--card:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #325082;
+  border-right: 10px solid transparent;
+}
+.field .field__box .player__item--card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #325082;
+  z-index: -1;
+}
+.field .field__box .player__item--card--name {
+  color: #9c1737;
+}
+.field .field__box .player__item--card--photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.field .field__box .player__item--card--photo-bg {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.field .field__box .player__item--card--info {
+  display: flex;
+}
+.field .field__box .player__item--card--info--column {
+  display: table;
+  padding: 2%;
+}
+.field .field__box .player__item--card--info--item {
+  tex-align: center;
+}
+.field .field__box .player__item--gk {
+  bottom: 1%;
+  left: 45%;
+}
+.field .field__box .player__item--two {
+  bottom: 25%;
+  right: 5%;
+}
+.field .field__box .player__item--three {
+  bottom: 15%;
+  right: 25%;
+}
+.field .field__box .player__item--four {
+  bottom: 15%;
+  left: 25%;
+}
+.field .field__box .player__item--five {
+  bottom: 42%;
+  right: 30%;
+}
+.field .field__box .player__item--six {
+  bottom: 25%;
+  left: 5%;
+}
+.field .field__box .player__item--seven {
+  bottom: 42%;
+  left: 30%;
+}
+.field .field__box .player__item--eight {
+  top: 30%;
+  left: 45%;
+}
+.field .field__box .player__item--nine {
+  top: 15%;
+  right: 5%;
+}
+.field .field__box .player__item--ten {
+  top: 15%;
+  left: 5%;
+}
+.field .field__box .player__item--eleven {
+  top: 8%;
+  left: 45%;
+}
+
+</style>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(".player__item").draggable({
+   containment:".field__box",
+   cursor: "grabbing"
+  })
+});
+
+//When mouseover the player, show card and change box-shadow color
+$(".player__item").on('mouseover', function(){
+  $(this).find(".player__item--card").css("display", "flex");
+  //$(this).(".player__item").css("box-shadow", "0 0 30px blue");
+});
+
+//When mouseout the player, hidden card and change box-shadow color
+$(".player__item").on('mouseout', function(){
+  $(this).find(".player__item--card").css("display", "none");
+});
+
+function cardShow(){
+  document.getElementsByClassName("player__item--card").style.display = "flex";
+};
+
+document.getElementsByClassName("player__item").addEventListener("click", cardShow());
+
+var canvas = document.getElementsByClassName('paint-canvas');
+var ctx = canvas.getContext('2d');
+ 
+var painting = document.getElementsByClassName('field');
+var paint_style = getComputedStyle(painting);
+canvas.width = parseInt(paint_style.getPropertyValue('width'));
+canvas.height = parseInt(paint_style.getPropertyValue('height'));
+
+var mouse = {x: 0, y: 0};
+ 
+canvas.addEventListener('mousemove', function(e) {
+  mouse.x = e.pageX - this.offsetLeft;
+  mouse.y = e.pageY - this.offsetTop;
+}, false);
+
+ctx.lineWidth = 3;
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.strokeStyle = '#00CC99';
+
+canvas.addEventListener('mousedown', function(e) {
+    ctx.beginPath();
+    ctx.moveTo(mouse.x, mouse.y);
+ 
+    canvas.addEventListener('mousemove', onPaint, false);
+}, false);
+
+canvas.addEventListener('mouseup', function() {
+    canvas.removeEventListener('mousemove', onPaint, false);
+}, false);
+ 
+var onPaint = function() {
+    ctx.lineTo(mouse.x, mouse.y);
+    ctx.stroke();
+};
+</script>
+
+
